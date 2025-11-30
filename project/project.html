@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colorful Shopping Hub</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Colorful Shopping Hub</h1>
+  <p>Bright products for a vibrant life!</p>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+    Shop Now
+  </button>
+
+  <!-- Cart Icon with Badge -->
+  <div id="cartIcon" class="cart-icon">
+    🛒
+    <span id="cartCount">0</span>
+  </div>
+</header>
+
+<!-- =================== FEATURES =================== -->
+<section id="features">
+  <h2>Our Features</h2>
+
+  <div class="features-container">
+
+    <div class="feature-card">
+      <img src="fast-image.jpg">
+      <h3>Fast Delivery</h3>
+      <p>Get your orders delivered quickly and safely.</p>
+    </div>
+
+    <div class="feature-card">
+      <img src="24-image.jpg">
+      <h3>24/7 Support</h3>
+      <p>We are always available for your help.</p>
+    </div>
+
+    <div class="feature-card">
+      <img src="quality-image.jpg">
+      <h3>High Quality</h3>
+      <p>Premium quality products guaranteed.</p>
+    </div>
+
+    <div class="feature-card">
+      <img src="return-image.jpg">
+      <h3>Easy Returns</h3>
+      <p>Simple and smooth return process.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- =================== PRODUCTS =================== -->
+<section id="products">
+  <h2>Featured Products</h2>
+
+  <div class="products-container">
+
+    <div class="product-card">
+      <img src="bag2.jpg">
+      <div class="product-info">
+        <h3>Colorful Backpack</h3>
+        <p>Durable and stylish for daily use.</p>
+        <div class="price">2999</div>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="nike.jpg">
+      <div class="product-info">
+        <h3>Stylish Sneakers</h3>
+        <p>Comfortable and trendy footwear.</p>
+        <div class="price">4500</div>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="spk.jpg">
+      <div class="product-info">
+        <h3>Mini Bluetooth Speaker</h3>
+        <p>Portable, loud, and stylish.</p>
+        <div class="price">1800</div>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="ps5.jpg">
+      <div class="product-info">
+        <h3>PS5 Pro</h3>
+        <p>Futuristic gaming experience</p>
+        <div class="price">190000</div>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+ <div class="product-card">
+      <img src="a2.jpg">
+      <div class="product-info">
+        <h3>Apple Watch Series 11</h3>
+        <p>Apple: Think Different</p>
+        <div class="price">134000</div>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+     <div class="product-card">
+      <img src="s22.jpg">
+      <div class="product-info">
+        <h3>Samsung Galaxy S24 Ultra </h3>
+        <p>Say Hello to Samsung AI</p>
+        <div class="price">390000</div>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CART BOX =================== -->
+<div id="cartBox" class="cart-box">
+  <h2>Your Cart</h2>
+  <div id="cartItems"></div>
+
+  <h3 id="totalPrice">Total: Rs. 0</h3>
+
+  <button id="submitCart" class="submit-btn">Submit</button>
+  <button id="buyNow" class="buy-btn">Buy Now</button>
+  <button id="closeCart" class="close-btn">Close</button>
+</div>
+
+<!-- =================== CONTACT =================== -->
+<section id="contact">
+  <h2>Contact Us</h2>
+
+  <div class="contact-container">
+    <form id="contactForm">
+
+      <div class="input-group">
+        <label>Your Name</label>
+        <input type="text" placeholder="Enter your name" required>
+      </div>
+
+      <div class="input-group">
+        <label>Your Email</label>
+        <input type="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="input-group">
+        <label>Your Message</label>
+        <textarea placeholder="Write your message..." rows="4" required></textarea>
+      </div>
+
+      <button type="submit" id="submitMessage">Submit</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>Created by Fatima, Zain & Haris</p>
+  <p>&copy; 2025 Colorful Shopping Hub</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

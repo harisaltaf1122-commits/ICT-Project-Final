@@ -1,0 +1,62 @@
+/* ===== GENERAL STYLES ===== */
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family: Arial, sans-serif; background: #e6f0ff; color: #333; }
+
+/* HEADER */
+header { 
+  background: linear-gradient(135deg, #0047ff, #001430); 
+  color: white; text-align: center; padding: 3rem 1rem; 
+}
+header h1 { font-size: 3rem; margin-bottom: 1rem; }
+header p { font-size: 1.2rem; margin-bottom: 2rem; }
+header button { padding: 0.8rem 2rem; border: none; border-radius: 25px; background: #fff; color: #0047ff; cursor: pointer; transition: 0.3s; }
+nav { display:flex; justify-content:center; gap:2rem; margin-top:1rem; }
+nav a { color:white; text-decoration:none; font-weight:bold; }
+nav a:hover { text-decoration: underline; }
+
+/* CART ICON */
+.cart-icon { position: fixed; top: 20px; right: 20px; font-size: 2rem; cursor: pointer; color: white; background: #0047ff; padding: 10px 15px; border-radius: 50px; box-shadow: 0 5px 10px rgba(0,0,0,0.3);}
+#cartCount { background: red; color: white; font-size: 0.8rem; padding: 3px 7px; border-radius: 50%; position: absolute; top: -5px; right: -5px; }
+
+/* FEATURES */
+#features { padding: 3rem 1rem; text-align: center; background: #ffe6e6; }
+.features-container { display:flex; flex-wrap:wrap; justify-content:center; gap:2rem; }
+.feature-card { background:white; width:250px; padding:1.2rem; border-radius:12px; }
+.feature-card img {
+    width: 100%;
+    height: 160px;   /* image ki height fix */
+    object-fit: cover; /* image ko crop karke perfect fit banata hai */
+    border-radius: 10px;
+}
+
+/* PRODUCTS */
+#products { padding:3rem 1rem; background:#111; color:white; }
+.products-container { display:flex; flex-wrap:wrap; gap:1.5rem; justify-content:center; }
+.product-card { background:white; width:260px; border-radius:12px; overflow:hidden; }
+.product-info { padding:1rem; color:black; }
+.product-info button { width:100%; padding:0.6rem; background:#0047ff; color:white; border:none; border-radius:8px; cursor:pointer; }
+.product-info button:hover { background:#0033aa; }
+
+/* CART BOX */
+.cart-box {
+  width: 350px; background: white; position: fixed; top: 50%; left: 50%;
+  transform: translate(-50%, -50%); padding: 1rem; border-radius: 12px; display: none;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+.cart-box h2 { margin-bottom:1rem; }
+.close-btn, .buy-btn, .submit-btn { padding: 0.7rem; width: 100%; margin-top: 1rem; border: none; cursor: pointer; border-radius: 8px; }
+.buy-btn { background: green; color:white; }
+.close-btn { background: red; color:white; }
+.submit-btn { background: #0047ff; color:white; }
+
+/* CONTACT FORM */
+#contact { padding: 3rem 1rem; background: linear-gradient(135deg, #d6e4ff, #eef2ff); text-align:center; }
+#contact h2 { color: #0037b3; font-size: 2.4rem; margin-bottom: 2rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+.contact-container { max-width:450px; margin:auto; background:white; padding:2rem; border-radius:15px; box-shadow:0 10px 30px rgba(0,0,0,0.1); animation: fadeIn 1s ease-out; }
+@keyframes fadeIn { from {opacity:0; transform:translateY(30px);} to {opacity:1; transform:translateY(0);} }
+.input-group { text-align:left; margin-bottom:1.2rem; }
+.input-group label { display:block; font-weight:bold; margin-bottom:5px; color:#0047cc; }
+.input-group input, .input-group textarea { width:100%; padding:0.9rem; border-radius:10px; border:1px solid #aac4ff; font-size:1rem; outline:none; transition:0.3s; }
+.input-group input:focus, .input-group textarea:focus { border-color:#0047ff; box-shadow:0 0 10px rgba(0,71,255,0.3); }
+#submitMessage { width:100%; padding:0.9rem; background:#0047ff; color:white; border:none; font-size:1.1rem; border-radius:25px; cursor:pointer; transition:0.3s; }
+#submitMessage:hover { background:#0033aa; transform:scale(1.03); }
