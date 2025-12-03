@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>about us </title>
+<!DOCTYPE html>
+<html >
+<head>
+  
+   
+    <title>  FAST  Shopping Hub</title>
+    <link rel="stylesheet" href="html.css" />
+</head>
+
+<body>
+<header class="hii">
+    <div class="nav-container">
+        <h1 class="z">FAST  Shopping Hub</h1>
+
+        <nav class="nav-links">
+            <a href="project.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="fa.html">Contact Us</a>
+       
+<button class="btn-cart">Add to Cart</button>
+
+
+
+        </nav>
+        <script>
+function updateCartCount() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let count = document.getElementById("cart-count");
+    if(count) count.innerText = cart.length;
+}
+updateCartCount();
+</script>
+
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="hi-content">
+        <h2> Nice  your visit </h2>
+        <p> you khow FAST is to much FAST  </p>
+       
+    </div>
+</header>
+
+<!-- Link to external CSS -->
+<link rel="stylesheet" href="fa.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav>
+  <a onclick="showPage('home')">Home</a>
+  <a onclick="showPage('team')">Team</a>
+  <a onclick="showPage('portfolio')">Portfolio</a>
+  <a onclick="showPage('checkout')">Checkout</a>
+</nav>
+
+<!-- ================= HOME PAGE ================= -->
+<section id="home" class="page active">
+  <div class="hero">
+    <h1>FASHION COUTURE</h1>
+    <p>By Fatima • Zain • Haris</p>
+  </div>
+
+  <h2>Meet Our Team</h2>
+
+  <div class="team-box">
+
+    <div class="card">
+      <img src="WhatsApp Image 2025-12-02 at 11.21.27 PM.jpeg">
+      <h3>Fatima</h3><p>Lead Designer</p>
+    </div>
+
+    <div class="card">
+      <img src="WhatsApp Image 2025-12-01 at 6.45.18 PM.jpeg">
+      <h3>Zain  abbas  </h3><br>
+      <h4> zainalibhatti@gmail.com </h4>
+      <p>project manager  and websitte owner  </p>
+    </div>
+
+    <div class="card">
+      <img src="WhatsApp Image 2025-12-02 at 11.19.17 PM.jpeg">
+      <h3>Haris</h3><p>UI/UX Designer</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= TEAM PAGE ================= -->
+<section id="team" class="page">
+  <h1>Our Designers</h1>
+
+  <div class="team-box">
+
+    <div class="card">
+      <img src="WhatsApp Image 2025-12-02 at 11.21.27 PM.jpeg">
+      <h3>Fatima altaf </h3><p>Lead Fashion Designer</p>
+    </div>
+
+    <div class="card">
+      <img src="WhatsApp Image 2025-12-01 at 6.45.18 PM.jpeg">
+      <h3>Zain abbas  </h3><br>
+      <h4> zailbhattihere@gnail.com </h4>
+      <p> project manager  and websitte owner  </p>
+    </div>
+
+    <div class="card">
+      <img src="WhatsApp Image 2025-12-02 at 11.19.17 PM.jpeg"">
+      <h3>Haris  altaf </h3><p>UI/UX Specialist</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= PORTFOLIO PAGE ================= -->
+
+
+<!-- ================= CHECKOUT PAGE ================= -->
+<section id="checkout" class="page">
+  <h1>Checkout</h1>
+
+  <div class="checkout">
+
+    <!-- SHIPPING FIXED BOX -->
+    <div class="shipping-box">
+      <h2>Shipping Info</h2>
+
+      <input id="name" placeholder="Full Name">
+      <input placeholder="Email">
+      <input placeholder="Phone">
+      <input placeholder="Address">
+      <input placeholder="City">
+
+      <select>
+        <option>Punjab</option>
+        <option>Sindh</option>
+        <option>KPK</option>
+        <option>Balochistan</option>
+      </select>
+
+      <input placeholder="Postal Code">
+    </div>
+
+    <div class="box">
+      <h2>Order Summary</h2>
+
+      <p>Designer Dress — Rs 4500</p>
+      <p>Shipping — Rs 250</p>
+      <p>Tax — Rs 100</p>
+      <hr>
+      <h3>Total: Rs </h3>
+
+      <button class="pay-btn" onclick="order()">Pay Now</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Link to external JS -->
+<script src="fa.js"></script>
+
+</body>
+</html>
